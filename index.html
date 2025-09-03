@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unwobble - Micro-Anxiety Support in 15 Minutes</title>
+    <meta name="description" content="Get instant support for micro-anxieties with a 15-minute chat to a real human. Not therapy, just human micro-support for small stressful moments.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%236366f1;stop-opacity:1' /><stop offset='100%' style='stop-color:%23ef4444;stop-opacity:1' /></linearGradient></defs><text x='25' y='75' font-size='50' font-family='Inter, sans-serif' font-weight='700' fill='url(%23grad)'>U</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Unwobble</span><span class="logo-dot">.</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#for-you">For You</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <button class="btn-primary">Book Session</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Feeling <span class="wobbly">wobbly</span>? <span class="highlight">Unwobble</span> in 15 minutes with real human support.
+                </h1>
+                <p class="hero-subtitle">
+                    A short reset with a real human when stress, nerves, or overthinking take over. For everyday micro-anxieties.
+                </p>
+                <p class="hero-analogy">
+                    Think of it as tech support for your brain.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn-primary btn-large">
+                        <i class="fas fa-comments"></i>
+                        Start Your 15-Minute Chat
+                    </button>
+                    <p class="hero-note">Transparent pricing • Real humans • No commitment</p>
+                </div>
+                
+
+            </div>
+            <div class="hero-visual">
+                <div class="chat-bubble">
+                    <div class="chat-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="chat-info">
+                            <h4>Harry @ Unwobble</h4>
+                            <span class="status">Online now</span>
+                        </div>
+                    </div>
+                    <div class="chat-message">
+                        <p>Hey there! What's on your mind today? I'm here to listen and help you feel more grounded.</p>
+                    </div>
+                    <div class="chat-message user-message">
+                        <p>Hey Harry, I have a big meeting in 15 minutes and my mind is racing. Can we quickly go over some talking points?</p>
+                    </div>
+                    <div class="typing-indicator">
+                        <div class="typing-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="typing-text">
+                            <span>Harry is typing</span>
+                        </div>
+                        <div class="chat-typing">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scrolling Events Section -->
+        <div class="events-scroll">
+            <div class="scroll-container">
+                <div class="scroll-content events-scroll-content">
+                    <div class="event-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Big Presentation</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-users"></i>
+                        <span>Boardroom Meeting</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-plane"></i>
+                        <span>Flight Anxiety</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-heart"></i>
+                        <span>First Date</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-glass-cheers"></i>
+                        <span>Social Situation</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Doomscrolling</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Exam Stress</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Important Call</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>Job Interview</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Big Meeting</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Big Presentation</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-users"></i>
+                        <span>Boardroom Meeting</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-plane"></i>
+                        <span>Flight Anxiety</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-heart"></i>
+                        <span>First Date</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-glass-cheers"></i>
+                        <span>Social Situation</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Doomscrolling</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Exam Stress</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Important Call</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>Job Interview</span>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Big Meeting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to feeling more grounded</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book a Session</h3>
+                    <p>Schedule your 15-minute session in just a few clicks. Choose your preferred time.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Receive WhatsApp/Text</h3>
+                    <p>Get a message from your listener right when your session starts. No apps to download.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>15 Minutes of Pure Support</h3>
+                    <p>Discuss, share, vent. We're here for you. Walk away feeling lighter and more grounded.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">One price, no hidden fees, no commitment</p>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="price">
+                        <span class="currency">£</span>
+                        <span class="amount">14.99</span>
+                    </div>
+                    <div class="pricing-details">
+                        <h3>15 Uninterrupted Minutes</h3>
+                        <p>One-on-one chat with a real human</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real human connection</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No AI, no chatbots</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Book when you need</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-cta">
+                    <button class="btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Your Session
+                    </button>
+                    <p class="pricing-note">No subscription • No commitment • Just support when you need it</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For You Section -->
+    <section id="for-you" class="for-you">
+        <div class="container">
+            <h2 class="section-title">Who Is This For?</h2>
+            <p class="section-subtitle">Micro-anxiety support in 15 minutes or less</p>
+            
+            <div class="segments-grid">
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Execs + Professionals</h3>
+                            <p class="segment-tagline-large">Your pocket calm coach for high-stakes moments.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">About to present? Steady your nerves before you step in.</p>
+                </div>
+                
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Students & Young Adults</h3>
+                            <p class="segment-tagline-large">The friend who always knows what to say when stress hits.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">Exam stress? Reset and refocus.</p>
+                </div>
+                
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Remote Workers & Creatives</h3>
+                            <p class="segment-tagline-large">Break the loop, get unstuck, move forward.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">Stuck or distracted? Get back in flow.</p>
+                </div>
+                
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Dating & Social Situations</h3>
+                            <p class="segment-tagline-large">Your micro-confidence boost, right when you need it.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">First-date nerves? Calm your butterflies.</p>
+                </div>
+                
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Night-time Worriers</h3>
+                            <p class="segment-tagline-large">The calm voice that helps you switch off.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">Thoughts racing? Switch off and unwind.</p>
+                </div>
+                
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <div class="segment-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="segment-title-group">
+                            <h3 class="segment-title-large">Parents & Caregivers</h3>
+                            <p class="segment-tagline-large">Overwhelmed? Take a breath and reset.</p>
+                        </div>
+                    </div>
+                    <p class="segment-description">Feeling stretched thin? Get grounded and centered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">What Makes Unwobble Different?</h2>
+                    <div class="about-points">
+                        <div class="about-point">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Quick & Focused</h4>
+                                <p>15-minute sessions designed for immediate relief, not long-term therapy or medical advice.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-point">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Real Human Connection</h4>
+                                <p>No AI, no chatbots, no automated responses. Just real people who want to listen and chat about whatever's on your mind.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-point">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Simple & Honest</h4>
+                                <p>We're not therapists, we're people who care and want to be there for you in those tough moments.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-point">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Safe & Confidential</h4>
+                                <p>Your privacy is protected. This is a judgment-free zone for whatever's on your mind.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-point">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <h4>Book When You Need</h4>
+                                <p>Schedule sessions that work for your schedule. We're here when you need us.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="about-visual">
+                    <div class="why-unwobble-visual">
+                        <h4>Why Unwobble?</h4>
+                        <div class="why-visual-points">
+                            <div class="why-visual-point">
+                                <i class="fas fa-robot"></i>
+                                <span>AI can hand you breathing scripts</span>
+                            </div>
+                            <div class="why-visual-point">
+                                <i class="fas fa-moon"></i>
+                                <span>Friends aren't always awake</span>
+                            </div>
+                            <div class="why-visual-point">
+                                <i class="fas fa-calendar-times"></i>
+                                <span>Therapy sounds too serious</span>
+                            </div>
+                        </div>
+                        <p class="why-visual-conclusion">👉 Sometimes you just need a real human in the moment, helping you feel steady again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Future Planning Section -->
+    <section id="future-planning" class="future-planning">
+        <div class="container">
+            <h2 class="section-title">Plan Ahead, Stay Calm</h2>
+            <p class="section-subtitle">Don't wait for anxiety to hit. Schedule support before you need it.</p>
+            
+            <div class="planning-grid">
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3>Big Meeting Coming Up?</h3>
+                    <p>Schedule a 15-minute session 30 minutes before to ease your nerves and boost confidence.</p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel Anxiety?</h3>
+                    <p>Book a session right before your flight or journey to feel grounded and prepared.</p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Exam Tomorrow?</h3>
+                    <p>Get a quick confidence boost and grounding session before you walk into the exam room.</p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>First Date Nerves?</h3>
+                    <p>Schedule support 15 minutes before to calm your butterflies and feel more confident.</p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Presentation Anxiety?</h3>
+                    <p>Book a session before you present to get your mind focused and your energy right.</p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Social Event Stress?</h3>
+                    <p>Get grounded before walking into that party or networking event.</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Unwobble?</h2>
+                <p>Don't let micro-anxieties hold you back. Connect with a real human in minutes.</p>
+                <button class="btn-primary btn-large">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Chat Now
+                </button>
+                <p class="cta-note">No commitment • No judgment • Just support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>Unwobble</span>
+                    </div>
+                    <p>Human micro-support for small stressful moments.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#for-you">For You</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@unwobble.com</p>
+                    <p>Available 24/7 for support</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Unwobble. Not therapy, not medical advice. Just human support.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mailing List Button -->
+    <div class="sticky-mailing">
+        <div class="sticky-content">
+            <div class="sticky-text">
+                <p>Try your first Unwobble session for <span class="sticky-original-price">£14.99</span>, or unlock it for just <span class="sticky-discounted-price">£4.99</span> by joining our mailing list.</p>
+            </div>
+            <form class="sticky-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="sticky-btn">
+                    <i class="fas fa-envelope"></i>
+                    Join List
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
