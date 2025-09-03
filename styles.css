@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+/* Ensure no horizontal overflow on any element */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -46,6 +52,12 @@ body {
     gap: 10px;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.nav-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -403,6 +415,36 @@ body {
     box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
 }
 
+/* Fix form validation popup positioning */
+.sticky-form {
+    position: relative;
+}
+
+.sticky-form input[type="email"]:invalid {
+    box-shadow: none;
+}
+
+.sticky-form input[type="email"]:invalid:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+}
+
+/* Force validation messages to appear above on small screens */
+@media (max-width: 768px) {
+    .sticky-form input[type="email"]::-webkit-validation-bubble-message {
+        position: absolute;
+        bottom: 100% !important;
+        top: auto !important;
+        margin-bottom: 5px;
+    }
+    
+    .sticky-form input[type="email"]::-moz-validation-bubble-message {
+        position: absolute;
+        bottom: 100% !important;
+        top: auto !important;
+        margin-bottom: 5px;
+    }
+}
+
 .sticky-form input[type="email"]::placeholder {
     color: #9ca3af;
 }
@@ -503,6 +545,29 @@ body {
     bottom: -20px;
     right: -40px;
     z-index: 10;
+}
+
+/* Mobile responsive for hero logo */
+@media (max-width: 768px) {
+    .hero-logo {
+        right: -20px;
+        bottom: -10px;
+    }
+    
+    .hero-logo-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        right: -10px;
+        bottom: -5px;
+    }
+    
+    .hero-logo-text {
+        font-size: 2rem;
+    }
 }
 
 .hero-logo-text {
@@ -1306,6 +1371,12 @@ section {
     font-size: 1.5rem;
 }
 
+.footer-logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
 .footer-section h4 {
     margin-bottom: 20px;
     color: #e2e8f0;
@@ -1364,6 +1435,14 @@ section {
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+    }
+    
+    .nav-logo-img {
+        height: 45px;
+    }
+    
+    .footer-logo-img {
+        height: 30px;
     }
     
     .hero-container {

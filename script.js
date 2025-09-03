@@ -345,3 +345,16 @@ function closeStickyMailing() {
         stickyMailing.style.transform = 'translateY(100%)';
     }
 }
+
+// Fix validation message positioning
+document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.querySelector('.sticky-form input[type="email"]');
+    if (emailInput) {
+        emailInput.addEventListener('invalid', function(e) {
+            // Force validation message to appear above on mobile
+            if (window.innerWidth <= 768) {
+                this.style.setProperty('--validation-position', 'above');
+            }
+        });
+    }
+});
