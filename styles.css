@@ -319,8 +319,8 @@ body {
 
 .sticky-close {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    right: 15px;
     background: none;
     border: none;
     color: #94a3b8;
@@ -334,6 +334,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1001;
 }
 
 .sticky-close:hover {
@@ -434,6 +435,7 @@ body {
         gap: 1rem;
         padding: 1rem;
         text-align: center;
+        padding-top: 2.5rem;
     }
     
     .sticky-form {
@@ -453,6 +455,11 @@ body {
     
     .sticky-text p {
         font-size: 1rem;
+    }
+    
+    .sticky-close {
+        top: 8px;
+        right: 12px;
     }
 }
 
