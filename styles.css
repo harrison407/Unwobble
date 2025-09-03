@@ -317,6 +317,30 @@ body {
     transition: transform 0.3s ease;
 }
 
+.sticky-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
 .sticky-mailing.show {
     transform: translateY(0);
 }
