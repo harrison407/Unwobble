@@ -60,6 +60,16 @@ body {
     object-fit: contain;
 }
 
+.nav-logo-u {
+    background: linear-gradient(135deg, #6366f1, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
 .logo-text {
     background: linear-gradient(135deg, #6366f1, #ef4444);
     -webkit-background-clip: text;
@@ -557,6 +567,10 @@ body {
     .hero-logo-text {
         font-size: 2.5rem;
     }
+    
+    .hero-logo-img {
+        height: 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -568,6 +582,10 @@ body {
     .hero-logo-text {
         font-size: 2rem;
     }
+    
+    .hero-logo-img {
+        height: 40px;
+    }
 }
 
 .hero-logo-text {
@@ -577,6 +595,13 @@ body {
     background-clip: text;
     font-weight: 700;
     font-size: 3rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.hero-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
@@ -1439,6 +1464,10 @@ section {
     
     .nav-logo-img {
         height: 45px;
+    }
+    
+    .nav-logo-u {
+        font-size: 1.5rem;
     }
     
     .footer-logo-img {
