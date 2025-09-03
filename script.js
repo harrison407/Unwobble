@@ -317,9 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Show sticky mailing after scrolling down a bit
     window.addEventListener('scroll', function() {
-        // Check if user has closed it before
-        const isClosed = localStorage.getItem('stickyMailingClosed');
-        if (!isClosed && window.scrollY > 300) {
+        if (window.scrollY > 300) {
             stickyMailing.classList.add('show');
         } else {
             stickyMailing.classList.remove('show');
@@ -345,7 +343,5 @@ function closeStickyMailing() {
     const stickyMailing = document.querySelector('.sticky-mailing');
     if (stickyMailing) {
         stickyMailing.style.transform = 'translateY(100%)';
-        // Store in localStorage so it stays closed
-        localStorage.setItem('stickyMailingClosed', 'true');
     }
 }

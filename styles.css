@@ -473,6 +473,14 @@ body {
     margin-top: 15px;
 }
 
+/* Hero Visual Container */
+.hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 /* Chat Bubble */
 .chat-bubble {
     background: white;
@@ -487,6 +495,24 @@ body {
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
+}
+
+/* Hero Logo */
+.hero-logo {
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    z-index: 10;
+}
+
+.hero-logo-text {
+    background: linear-gradient(135deg, #6366f1, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 3rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .chat-header {
@@ -529,6 +555,15 @@ body {
 .chat-message p {
     color: #475569;
     margin: 0;
+    margin-bottom: 5px;
+}
+
+.message-time {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 400;
+    display: block;
+    text-align: right;
 }
 
 .user-message {
@@ -539,6 +574,11 @@ body {
 
 .user-message p {
     color: white;
+    margin-bottom: 5px;
+}
+
+.user-message .message-time {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .typing-indicator {
@@ -1257,8 +1297,13 @@ section {
     margin-bottom: 15px;
 }
 
-.footer-logo i {
-    color: #ef4444;
+.footer-logo-text {
+    background: linear-gradient(135deg, #6366f1, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .footer-section h4 {
