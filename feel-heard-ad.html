@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unwobble - Feel Heard, Not Processed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #6366f1, #ef4444);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .ad-card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ad-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(135deg, #6366f1, #ef4444);
+        }
+
+        .logo {
+            width: 70px;
+            height: auto;
+            margin: 0 auto 30px;
+            display: block;
+            animation: wobble 3s ease-in-out infinite;
+        }
+
+        @keyframes wobble {
+            0%, 100% { 
+                transform: rotate(0deg) scale(1); 
+            }
+            15% { 
+                transform: rotate(-3deg) scale(1.05); 
+            }
+            30% { 
+                transform: rotate(3deg) scale(0.95); 
+            }
+            45% { 
+                transform: rotate(-2deg) scale(1.02); 
+            }
+            60% { 
+                transform: rotate(2deg) scale(0.98); 
+            }
+            75% { 
+                transform: rotate(-1deg) scale(1.01); 
+            }
+            90% { 
+                transform: rotate(1deg) scale(0.99); 
+            }
+        }
+
+        .main-headline {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .highlight-heard {
+            background: linear-gradient(135deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .highlight-processed {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #64748b;
+            margin-bottom: 40px;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        .comparison-box {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .comparison-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .comparison-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .comparison-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .comparison-text {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .unwobble-text {
+            color: #10b981;
+        }
+
+        .ai-text {
+            color: #ef4444;
+        }
+
+        .vs-divider {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #94a3b8;
+            margin: 0 20px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .fine-print {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 480px) {
+            .ad-card {
+                padding: 40px 25px;
+            }
+            
+            .main-headline {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .comparison-box {
+                padding: 25px 20px;
+            }
+            
+            .comparison-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .vs-divider {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-card">
+        <img src="logo.PNG" alt="Unwobble" class="logo">
+        
+        <h1 class="main-headline">
+            Feel <span class="highlight-heard">Heard</span>,<br>
+            Not <span class="highlight-processed">Processed</span>
+        </h1>
+        
+        <p class="subtitle">
+            Real human support when you need it most
+        </p>
+        
+        <div class="comparison-box">
+            <div class="comparison-row">
+                <div class="comparison-item">
+                    <div class="comparison-label">Unwobble</div>
+                    <div class="comparison-text unwobble-text">Real humans</div>
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="comparison-item">
+                    <div class="comparison-label">AI Chatbots</div>
+                    <div class="comparison-text ai-text">Automated responses</div>
+                </div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-item">
+                    <div class="comparison-label">Unwobble</div>
+                    <div class="comparison-text unwobble-text">Empathetic listening</div>
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="comparison-item">
+                    <div class="comparison-label">AI Chatbots</div>
+                    <div class="comparison-text ai-text">Scripted replies</div>
+                </div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-item">
+                    <div class="comparison-label">Unwobble</div>
+                    <div class="comparison-text unwobble-text">15-minute sessions</div>
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="comparison-item">
+                    <div class="comparison-label">AI Chatbots</div>
+                    <div class="comparison-text ai-text">Endless loops</div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="cta-button">
+            Get Human Support
+        </a>
+        
+        <p class="fine-print">
+            No AI • No chatbots • Just real people who care
+        </p>
+    </div>
+</body>
+</html>
