@@ -343,6 +343,7 @@ function closeStickyMailing() {
     const stickyMailing = document.querySelector('.sticky-mailing');
     if (stickyMailing) {
         stickyMailing.style.transform = 'translateY(100%)';
+        stickyMailing.classList.add('hidden');
     }
 }
 

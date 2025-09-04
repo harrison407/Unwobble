@@ -344,6 +344,11 @@ body {
     height: auto;
 }
 
+.sticky-mailing.hidden {
+    transform: translateY(100%);
+    visibility: hidden;
+}
+
 .sticky-close {
     position: absolute;
     top: 10px;
