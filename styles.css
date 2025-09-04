@@ -340,6 +340,8 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
+    min-height: fit-content;
+    height: auto;
 }
 
 .sticky-close {
@@ -643,6 +645,8 @@ body {
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 20px;
+    text-align: left;
+    margin-right: 20px;
 }
 
 .chat-message p {
@@ -663,6 +667,7 @@ body {
     background: #6366f1;
     margin-left: 20px;
     margin-right: 0;
+    text-align: right;
 }
 
 .user-message p {
@@ -803,6 +808,13 @@ body {
     white-space: nowrap;
     width: max-content;
     will-change: transform;
+}
+
+@media (max-width: 768px) {
+    .scroll-content {
+        gap: 25px;
+        animation: scroll-left 25s linear infinite;
+    }
 }
 
 .scroll-content:hover {
@@ -1484,11 +1496,11 @@ section {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .hero-analogy {
