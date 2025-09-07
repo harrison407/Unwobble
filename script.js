@@ -58,16 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctaButtons = document.querySelectorAll('.btn-primary');
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             // Add click animation
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = '';
             }, 150);
-
-            // Show a simple modal or redirect (you can customize this)
-            showChatModal();
         });
     });
 

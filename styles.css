@@ -117,6 +117,32 @@ body {
     box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
 }
 
+.nav-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-social-link {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-social-link:hover {
+    background: #6366f1;
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* Buttons */
 .btn-primary {
     padding: 15px 30px;
@@ -1476,9 +1502,27 @@ section {
     color: #94a3b8;
 }
 
+.crisis-disclaimer {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 3px solid #fbbf24;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
+        display: none;
+    }
+    
+    .nav-social {
         display: none;
     }
     
