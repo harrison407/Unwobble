@@ -326,7 +326,8 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const email = this.querySelector('input[type="email"]').value;
             if (email) {
-                alert('Thanks! We\'ll send your discount code to ' + email);
+                // Redirect to free Calendly booking
+                window.open('https://calendly.com/hello-unwobble/15-minute-unwobble-free', '_blank');
                 this.reset();
             }
         });
